@@ -24,11 +24,11 @@ const AllRooms = () => {
     <p>All Rooms</p>
     <section>
     <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"}/>
-    <ControlPanelButton label={"Living room"} no={"2"}/>
-    <ControlPanelButton label={"Kitchen"} no={"5"}/>
-    <ControlPanelButton label={"Bathroom"} no={"1"}/>
-    <ControlPanelButton label={"Outdoor"} no={"5"}/>
-    <ControlPanelButton label={"Balcony"} no={"2"}/>
+    <ControlPanelButton pictogram={"room"} label={"Living room"} no={"2"}/>
+    <ControlPanelButton pictogram={"kitchen"} label={"Kitchen"} no={"5"}/>
+    <ControlPanelButton pictogram={"bathtube"} label={"Bathroom"} no={"1"}/>
+    <ControlPanelButton pictogram={"house"} label={"Outdoor"} no={"5"}/>
+    <ControlPanelButton pictogram={"balcony"} label={"Balcony"} no={"2"}/>
     </section>
 </main>
 
