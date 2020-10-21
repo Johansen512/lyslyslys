@@ -23,12 +23,12 @@ const AllRooms = () => {
 <main css={style}>
     <p>All Rooms</p>
     <section>
-    <ControlPanelButton />
-    <ControlPanelButton />
-    <ControlPanelButton />
-    <ControlPanelButton />
-    <ControlPanelButton />
-    <ControlPanelButton />
+    <ControlPanelButton label={"Bed room"} no={"4"}/>
+    <ControlPanelButton label={"Living room"} no={"2"}/>
+    <ControlPanelButton label={"Kitchen"} no={"5"}/>
+    <ControlPanelButton label={"Bathroom"} no={"1"}/>
+    <ControlPanelButton label={"Outdoor"} no={"5"}/>
+    <ControlPanelButton label={"Balcony"} no={"2"}/>
     </section>
 </main>
 
