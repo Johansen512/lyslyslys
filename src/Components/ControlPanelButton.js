@@ -23,11 +23,6 @@ const ControlPanelButton = ({label, pictogram, no }) => {
 
         <button css={style}
         type="button"
-        className={}
-       
-        
-        {...props}
-        
         >{pictogram}{label}{no}</button>
 
      );
