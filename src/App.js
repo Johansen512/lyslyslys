@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       
-      <SwitchButton styling={primeStyle} text={"hallo?"}/>
+      <SwitchButton label={"test"} />
+      <SwitchButton label={"test2"} primeStyle={"primeStyle--big"}/>
+      <SwitchButton label={"test3"} primeStyle={"primeStyle--scene"}/>
         
     </div>
   );
