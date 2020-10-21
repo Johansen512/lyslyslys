@@ -23,7 +23,7 @@ const AllRooms = () => {
 <main css={style}>
     <p>All Rooms</p>
     <section>
-    <ControlPanelButton pictogram={img src="../public/img/brd.png" } label={"Bed room"} no={"4"}/>
+    <ControlPanelButton label={"Bed room"} no={"4"}/>
     <ControlPanelButton label={"Living room"} no={"2"}/>
     <ControlPanelButton label={"Kitchen"} no={"5"}/>
     <ControlPanelButton label={"Bathroom"} no={"1"}/>
