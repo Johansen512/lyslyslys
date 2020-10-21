@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-const ControlPanelButton = ({label, pictogram, no }) => {
+const ControlPanelButton = ({label, pictogram, no, props }) => {
 
     const style = css`
     width: 9.375em;
@@ -23,7 +23,7 @@ const ControlPanelButton = ({label, pictogram, no }) => {
 
         <button css={style}
         type="button"
-        >{pictogram}{label}{no}</button>
+
 
      );
 }
