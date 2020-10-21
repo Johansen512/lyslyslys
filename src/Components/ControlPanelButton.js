@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-const ControlPanelButton = ({label, pictogram, no }) => {
+const ControlPanelButton = ({label, pictogram, no, props }) => {
 
 
 
@@ -12,7 +12,7 @@ const ControlPanelButton = ({label, pictogram, no }) => {
 
         <button 
         type="button"
-        className={}
+        /*className={}*/
         img={pictogram}
         text={no}
         {...props}
