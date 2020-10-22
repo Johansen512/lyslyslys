@@ -6,7 +6,7 @@ import ControlPanelButton from "./ControlPanelButton"
 const AllRooms = () => {
 
     const style = css`
-    width:375px;
+    width:23.4375;
     display: flex;
     flex-direction: column;
     background-color:#F6F8FB; 
@@ -24,7 +24,8 @@ const sectionstyle = css`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    border:10px solid black;
+    
+    
     
 
 
