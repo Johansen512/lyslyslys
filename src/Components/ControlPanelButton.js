@@ -22,7 +22,7 @@ const ControlPanelButton = ({label, pictogram, no, props }) => {
 
 
         <button css={style}
-        type="button"><img src="/img/{pictogram}.png" alt="test"/><h3>{label}</h3><p>{no}</p></button>
+        type="button"><img src={"/img/" + {pictogram} + ".png"} /><h3>{label}</h3><p>{no}</p></button>
 
 
      );
