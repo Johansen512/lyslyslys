@@ -20,12 +20,14 @@ const ControlPanelButton = ({label, pictogram, no, props }) => {
 
     return ( 
 
-
+        
         <button css={style}
-        type="button"><img src={"/img/" + {pictogram} + ".png"} /><h3>{label}</h3><p>{no}</p></button>
+        type="button"><img src={`/img/${pictogram}.png`} /><h3>{label}</h3><p>{no}</p></button>
 
 
      );
+
+     
 }
  
 export default ControlPanelButton;
