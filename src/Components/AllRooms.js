@@ -6,15 +6,19 @@ import ControlPanelButton from "./ControlPanelButton"
 const AllRooms = () => {
 
     const style = css`
+    display: flex;
+    flex-direction: column;
     border: 10px solid black;
     background-color:#F6F8FB; 
     color:#002D67;
     font-size: 1.1875em;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 2em;
     border-style:none;
     font-family: 'Montserrat', sans-serif;
     
+
+
 `;
 
 
