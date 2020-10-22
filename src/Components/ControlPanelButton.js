@@ -8,14 +8,15 @@ const ControlPanelButton = ({label, pictogram, no, props }) => {
     flex-direction: column;
     padding: 0.5em;
     margin: 0.75em;
-    width: 9.375em;
-    height: 9.375em;
+    width: 150px;
+    height: 150px;
     background-color:#FFFFFF;
     color:#002D67;
     font-size: 1.1875em;
     font-weight: bold;
     border-radius: 1.5em;
-    border-style:none;
+    border: solid black 1em;
+
     font-family: 'Montserrat', sans-serif;
     
 `;
