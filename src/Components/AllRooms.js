@@ -6,27 +6,35 @@ import ControlPanelButton from "./ControlPanelButton"
 const AllRooms = () => {
 
     const style = css`
+    width:375px;
     display: flex;
     flex-direction: column;
-    border: 10px solid black;
     background-color:#F6F8FB; 
     color:#002D67;
     font-size: 1.1875em;
     font-weight: bold;
     border-radius: 2em;
-    border-style:none;
     font-family: 'Montserrat', sans-serif;
+    
+
+`;
+
+const sectionstyle = css`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border:10px solid black;
     
 
 
 `;
 
-
     return (  
 
 <main css={style}>
     <p>All Rooms</p>
-    <section>
+    <section css={sectionstyle}>
     <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"}/>
     <ControlPanelButton pictogram={"room"} label={"Living room"} no={"2"}/>
     <ControlPanelButton pictogram={"kitchen"} label={"Kitchen"} no={"5"}/>
