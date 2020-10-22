@@ -6,17 +6,15 @@ const ControlPanelButton = ({label, pictogram, no, props }) => {
     const style = css`
     display: flex;
     flex-direction: column;
-    padding: 0.5em;
-    margin: 0.75em;
-    width: 150px;
-    height: 150px;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    width: 9.375rem;
+    height: 9.375rem;
     background-color:#FFFFFF;
     color:#002D67;
-    font-size: 1.1875em;
+    font-size: 1.1875rem;
     font-weight: bold;
-    border-radius: 1.5em;
-    border: solid black 1em;
-
+    border-radius: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     
 `;
