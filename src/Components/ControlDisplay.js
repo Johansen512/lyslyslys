@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton"
 
 
@@ -32,6 +33,18 @@ const sectionstyle = css`
 
 `;
 
+const ballsection = css`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+
+
+`;
+
     return (  
 
 <main css={style}>
@@ -40,12 +53,22 @@ const sectionstyle = css`
     <p>Intensity</p>
     </section>
 
-    <section css={sectionstyle}>
+
     <p>Colors</p>
+    <section css={ballsection}>
+    
+    <ColorBall ballcolor={"#FF9B9B"}/>
+    <ColorBall ballcolor={"#94EB9E"}/>
+    <ColorBall ballcolor={"#94CAEB"}/>
+    <ColorBall ballcolor={"#A594EB"}/>
+    <ColorBall ballcolor={"#DE94EB"}/>
+    <ColorBall ballcolor={"#EBD094"}/>
+    <ColorBall ballcolor={"#FFFFFF"} label={"+"}/>
     </section>
 
-    <section css={sectionstyle}>
     <p>Scenes</p>
+    <section css={sectionstyle}>
+    
     <SceneButton color={"#FF9B9B"} scene = {"Birthday"} />
     <SceneButton color={"#A693EB"} scene = {"Party"} />
     <SceneButton color={"#93CAEB"} scene = {"Relax"} />
