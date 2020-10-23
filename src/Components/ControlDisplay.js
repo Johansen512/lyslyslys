@@ -2,6 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton"
+import IntensityDisplay from "./IntensityDisplay"
 
 
 
@@ -48,9 +49,10 @@ const ballsection = css`
     return (  
 
 <main css={style}>
-    
+<p>Intensity</p>
     <section css={sectionstyle}>
-    <p>Intensity</p>
+    
+    <IntensityDisplay />
     </section>
 
 
