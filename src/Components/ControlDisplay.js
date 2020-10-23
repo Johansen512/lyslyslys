@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import SceneButton from "./SceneButton"
 
 
 
@@ -45,6 +46,10 @@ const sectionstyle = css`
 
     <section css={sectionstyle}>
     <p>Scenes</p>
+    <SceneButton color={"#FF9B9B"} scene = {"Birthday"} />
+    <SceneButton color={"#A693EB"} scene = {"Party"} />
+    <SceneButton color={"#93CAEB"} scene = {"Relax"} />
+    <SceneButton color={"#89DD94"} scene = {"Fun"} />
     </section>
 </main>
 

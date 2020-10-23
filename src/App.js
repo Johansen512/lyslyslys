@@ -3,13 +3,15 @@ import './App.css';
 import SceneButton from "./Components/SceneButton";
 import Allrooms from "../src/Components/AllRooms"
 import Mainview from "../src/View/Mainview";
+import Roomview from "../src/View/Roomview"
 
 
 function App() {
   return (
     <div className="App">
-      <Mainview title={"Controlpanel"}/>
-      <SceneButton scene = {"Relax"} />
+     
+      <Roomview />
+      
 
         
     </div>
