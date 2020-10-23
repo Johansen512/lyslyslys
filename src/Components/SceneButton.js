@@ -12,7 +12,7 @@ const SceneButton = ({scene, color, props }) => {
     margin: 0.75rem;
     width: 9.375rem;
     height: 3.4375rem;
-    background-color:red;
+    background-color:${color};
     color:#002D67;
     font-size: 1rem;
     font-weight: bold;
