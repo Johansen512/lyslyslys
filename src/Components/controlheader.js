@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 
 
-const controlheader = ({title}) => {
+const Controlheader = ({title}) => {
 
     const imgstyle = css`
     
@@ -24,11 +24,11 @@ align-items: center;
 
 
     return (
-        
+
 <header css={headerstyle}><h1>{title}</h1><img css={imgstyle} src="img/user0.jpg"/></header>
 
 
       );
 }
  
-export default controlheader;
+export default Controlheader;
