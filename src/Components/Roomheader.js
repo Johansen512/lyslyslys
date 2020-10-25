@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 
 
 const Roomheader = ({room}) => {
@@ -26,7 +27,7 @@ align-items: center;
     return (
 
 
-<header css={headerstyle}><icon></icon><h1>{room}</h1><img css={imgstyle} src="img/user0.jpg"/><p>'${no} lights'</p><lightbuttons /></header>
+<header css={headerstyle}><icon></icon><h1>{room}</h1><img css={imgstyle} src="img/user0.jpg"/><p>'${no} lights'</p><RoomlightbuttonCluster /></header>
 
       );
 }
