@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-const Roomlightbutton = (label, props) => {
+const Roomlightbutton = ({label, props}) => {
 
     const style = css`
     display: flex;
