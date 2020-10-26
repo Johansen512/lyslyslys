@@ -24,7 +24,7 @@ const Roomview = () => {
 
     return ( 
         <main css={wrapperstyle}>
-        <Roomheader />
+        <Roomheader room={"Bed Room"}/>
        <ControlDisplay />
         </main>
         
