@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import Roomlightbutton from "../Components/Roomlightbutton"
 
-const RoomlightbuttonCluster = (label, props) => {
+const RoomlightbuttonCluster = ({label, props}) => {
 
     const style = css`
     display: flex;

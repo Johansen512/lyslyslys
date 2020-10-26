@@ -27,7 +27,7 @@ align-items: center;
     return (
 
 
-<header css={headerstyle}><icon></icon><h1>{room}</h1><img css={imgstyle} src="img/user0.jpg"/><p>'${no} lights'</p><RoomlightbuttonCluster /></header>
+<header css={headerstyle}><img css={imgstyle} src="img/backarrow.png"/><h1>{room}</h1><img css={imgstyle} src="img/user0.jpg"/><p>'${no} lights'</p><RoomlightbuttonCluster /></header>
 
       );
 }
