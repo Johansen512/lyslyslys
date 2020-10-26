@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Router } from "@reach/router";
 import SceneButton from "../src/Components/SceneButton";
 import Allrooms from "../src/Components/AllRooms"
 import Mainview from "../src/View/Mainview";
@@ -11,8 +12,11 @@ function App() {
   return (
     <div className="App">
      
-      <Roomview />
-      
+     
+      <Router>
+                    <Roomview path="/roomview" />
+                    <Mainview path="/" />
+                </Router>
 
         
     </div>
