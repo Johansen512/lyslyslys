@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import ControlDisplay from "../Components/ControlDisplay";
+import Roomheader from "../Components/Roomheader";
 
 
 const Roomview = () => {
@@ -23,7 +24,7 @@ const Roomview = () => {
 
     return ( 
         <main css={wrapperstyle}>
-        
+        <Roomheader />
        <ControlDisplay />
         </main>
         

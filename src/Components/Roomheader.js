@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 
 
-const Roomheader = ({room}) => {
+const Roomheader = ({room, no}) => {
 
     const imgstyle = css`
     
