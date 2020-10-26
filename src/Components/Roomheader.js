@@ -6,7 +6,8 @@ import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 const Roomheader = ({room, no}) => {
 
     const imgstyle = css`
-    
+    grid-column: 1/2;
+    grid-row:1/2;
     width:0.87875rem;
     height:0.82875rem;
    
@@ -16,16 +17,33 @@ const Roomheader = ({room, no}) => {
 
 const headerstyle = css`
     
-display: flex;
-flex-direction: row;
-justify-content:space-between;
-align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
 `;
 
+const hstyle = css`
+grid-column: 2/3;
+grid-row:1/2;
+
+
+`;
+
 const pstyle = css`
+display:flex;
+flex-direction:column;
+color: #FFD239;
 font-size: 1.1875rem;
 font-family: 'Montserrat', sans-serif;
+grid-column: 1/3;
+grid-row:2/3;
+
+`;
+
+const clusterstyle= css`
+grid-column: 1/10;
+grid-row:3/4;
+
 
 `;
 
@@ -33,7 +51,7 @@ font-family: 'Montserrat', sans-serif;
     return (
 
 
-<header css={headerstyle}><img css={imgstyle} src="img/backarrow.png"/><h1>{room}</h1><p css={pstyle}>{no} lights</p><RoomlightbuttonCluster /></header>
+<header css={headerstyle}><h1 css={hstyle}><img css={imgstyle} src="img/backarrow.png"/>{room}</h1><p css={pstyle}>{no} lights</p><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
 
       );
 }
