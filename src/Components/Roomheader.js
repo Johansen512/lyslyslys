@@ -14,6 +14,15 @@ const Roomheader = ({room, no}) => {
     
     
 `;
+const lampstyle = css`
+grid-column: 4/10;
+grid-row:1/2;
+width:2rem;
+height:2rem;
+
+
+
+`;
 
 const headerstyle = css`
     
@@ -51,7 +60,7 @@ grid-row:3/4;
     return (
 
 
-<header css={headerstyle}><h1 css={hstyle}><img css={imgstyle} src="img/backarrow.png"/>{room}</h1><p css={pstyle}>{no} lights</p><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
+<header css={headerstyle}><h1 css={hstyle}><img css={imgstyle} src="img/backarrow.png"/>{room}</h1><p css={pstyle}>{no} lights</p><img css={lampstyle} src="img/lamp.svg"/><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
 
       );
 }
