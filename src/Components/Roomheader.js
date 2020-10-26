@@ -23,11 +23,17 @@ align-items: center;
     
 `;
 
+const pstyle = css`
+font-size: 1.1875rem;
+font-family: 'Montserrat', sans-serif;
+
+`;
+
 
     return (
 
 
-<header css={headerstyle}><img css={imgstyle} src="img/backarrow.png"/><h1>{room}</h1><p>`${no} lights`</p><RoomlightbuttonCluster /></header>
+<header css={headerstyle}><img css={imgstyle} src="img/backarrow.png"/><h1>{room}</h1><p css={pstyle}>{no} lights</p><RoomlightbuttonCluster /></header>
 
       );
 }
