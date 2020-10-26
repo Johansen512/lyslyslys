@@ -3,7 +3,7 @@ import { css, jsx } from "@emotion/core";
 import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 
 
-const Roomheader = ({room}) => {
+const Roomheader = ({room, no}) => {
 
     const imgstyle = css`
     

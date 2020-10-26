@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import SceneButton from "./Components/SceneButton";
+import SceneButton from "../src/Components/SceneButton";
 import Allrooms from "../src/Components/AllRooms"
 import Mainview from "../src/View/Mainview";
-import Roomview from "../src/View/Roomview"
+import Roomview from "../src/View/Roomview";
+
 
 
 function App() {
