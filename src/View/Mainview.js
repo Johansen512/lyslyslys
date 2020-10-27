@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import AllRooms from "../Components/AllRooms"
-import Controlheader from "../Components/Controlheader"
+import Controlheader from "../Components/controlheader"
 
 const Mainview = () => {
     const wrapperstyle = css`
@@ -13,9 +13,9 @@ const Mainview = () => {
     color:#FFFFFF;
     font-size: 0.9375rem;
     font-weight: bold;
-    
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    
     
     
 `;
