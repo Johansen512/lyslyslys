@@ -15,7 +15,7 @@ const DataContextProvider = (props) => {
     }, []);
     data && console.log(data.stuff[0])
     return (<dataContext.Provider value={{ data }}>
-
+<div>tjup tjup</div>
     {props.children}
     </dataContext.Provider>
 

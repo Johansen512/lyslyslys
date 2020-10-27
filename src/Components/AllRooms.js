@@ -35,8 +35,8 @@ const sectionstyle = css`
     return (  
 
 <main css={style}>
-    <p>All RoomsTest</p>
-    <FetchTest />
+    <p>All Rooms</p>
+
     <section css={sectionstyle}>
     <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"} link to />
     <ControlPanelButton pictogram={"room"} label={"Living room"} no={"2"}/>
