@@ -1,15 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import ControlPanelButton from "./ControlPanelButton"
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { Link } from "@reach/router";
-=======
-import FetchTest from "./FetchTest";
->>>>>>> main
-=======
 
->>>>>>> 65618a1ccd84fff78770ae573dd0cc5b8d3c9337
 
 
 const AllRooms = () => {
@@ -52,15 +44,6 @@ const sectionstyle = css`
     <ControlPanelButton pictogram={"bathtube"} label={"Bathroom"} no={"1"}/>
     <ControlPanelButton pictogram={"house"} label={"Outdoor"} no={"5"}/>
     <ControlPanelButton pictogram={"balcony"} label={"Balcony"} no={"2"}/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Link to="/Roomview">Underside</Link>
-=======
-   
->>>>>>> main
-=======
-
->>>>>>> 65618a1ccd84fff78770ae573dd0cc5b8d3c9337
     
     </section>
 </main>
