@@ -9,7 +9,7 @@ const Controlheader = ({title}) => {
     width:3.3125rem;
     height:3.3125rem;
     border-radius:3.125rem;
-    border: solid white 0.125rem;
+    border: solid black 0.125rem;
     
 `;
 
