@@ -2,6 +2,8 @@
 import { css, jsx } from "@emotion/core";
 import AllRooms from "../Components/AllRooms"
 import Controlheader from "../Components/controlheader"
+import dataContext from "../Contexts/DataContext"
+
 
 const Mainview = () => {
     const wrapperstyle = css`
