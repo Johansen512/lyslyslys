@@ -4,6 +4,7 @@ import AllRooms from "../Components/AllRooms"
 import Controlheader from "../Components/controlheader"
 import dataContext from "../Contexts/DataContext"
 
+
 const Mainview = () => {
     const wrapperstyle = css`
     width: 100%;
@@ -14,9 +15,9 @@ const Mainview = () => {
     color:#FFFFFF;
     font-size: 0.9375rem;
     font-weight: bold;
-    
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    
     
     
 `;
