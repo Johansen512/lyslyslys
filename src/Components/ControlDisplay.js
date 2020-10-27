@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import ColorBall from "./Colorball";
-import SceneButton from "./SceneButton"
-import IntensityDisplay from "./IntensityDisplay"
-
+import SceneButton from "./SceneButton";
+import IntensityDisplay from "./IntensityDisplay";
+import dataContext from "../Contexts/DataContext";
 
 
 const ControlDisplay = () => {

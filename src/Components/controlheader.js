@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import dataContext from "../Contexts/DataContext";
 
 
 const Controlheader = ({title}) => {
