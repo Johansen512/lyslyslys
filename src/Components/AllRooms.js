@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import ControlPanelButton from "./ControlPanelButton"
-import FetchTest from "./FetchTest";
+
 
 
 const AllRooms = () => {
@@ -38,13 +38,13 @@ const sectionstyle = css`
     <p>All Rooms</p>
     <FetchTest />
     <section css={sectionstyle}>
-    <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"}/>
+    <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"} link to />
     <ControlPanelButton pictogram={"room"} label={"Living room"} no={"2"}/>
     <ControlPanelButton pictogram={"kitchen"} label={"Kitchen"} no={"5"}/>
     <ControlPanelButton pictogram={"bathtube"} label={"Bathroom"} no={"1"}/>
     <ControlPanelButton pictogram={"house"} label={"Outdoor"} no={"5"}/>
     <ControlPanelButton pictogram={"balcony"} label={"Balcony"} no={"2"}/>
-   
+
     
     </section>
 </main>
