@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
+
 const ControlPanelButton = ({label, pictogram, no, props }) => {
 
     const style = css`
