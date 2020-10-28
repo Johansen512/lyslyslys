@@ -3,7 +3,7 @@ import { css, jsx } from "@emotion/core";
 import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton";
 import IntensityDisplay from "./IntensityDisplay";
-import dataContext from "../Contexts/DataContext";
+import dataContext from "../contexts/DataContext";
 
 
 const ControlDisplay = () => {
