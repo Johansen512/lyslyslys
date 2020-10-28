@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import {useContext, useState} from "react";
+import { Link } from "@reach/router";
 import ControlPanelButton from "./ControlPanelButton"
 import { dataContext } from "../contexts/DataContext"
 
@@ -35,12 +36,12 @@ const sectionstyle = css`
     <p>All Rooms</p>
 
     <section css={sectionstyle}>
-   {data && <ControlPanelButton pictogram={data[0].image} label= {data[0].name} no={data[0].numberoflights} link to />}
-   {data &&  <ControlPanelButton pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
-   {data &&  <ControlPanelButton pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
-   {data &&  <ControlPanelButton pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
-   {data &&  <ControlPanelButton pictogram={data[4].image} label={data[4].name} no={data[4].numberoflights}/>}
-   {data &&  <ControlPanelButton pictogram={data[5].image} label={data[5].name} no={data[5].numberoflights}/>}
+    <Link to="/roomview">{data && <ControlPanelButton pictogram={data[0].image} label={data[0].name} no={data[0].numberoflights}/>}</Link>
+   {data && <ControlPanelButton pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
+   {data && <ControlPanelButton pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
+   {data && <ControlPanelButton pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
+   {data && <ControlPanelButton pictogram={data[4].image} label={data[4].name} no={data[4].numberoflights}/>}
+   {data && <ControlPanelButton pictogram={data[5].image} label={data[5].name} no={data[5].numberoflights}/>}
     
     </section>
 </main>
