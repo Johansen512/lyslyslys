@@ -12,6 +12,8 @@ export const types = {
         textColor: "#fff",
         backgroundColor: "#333"
     }
+
+    <div>test1</div>
 }
 
 
