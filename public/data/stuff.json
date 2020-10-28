@@ -4,7 +4,7 @@
             "id": 1,
             "name": "Bedroom",
             "numberoflights":4,
-            "image": "./img/bed.png"
+            "image": "bed"
            
             
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "name": "Living room",
             "numberoflights":2,
-            "image": "./img/bed.png"
+            "image": "room"
            
             
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "name": "Kitchen",
             "numberoflights":5,
-            "image": "./img/kitchen.png"
+            "image": "kitchen"
            
             
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "name": "Bathroom",
             "numberoflights":1,
-            "image": "./img/bathtube.png"
+            "image": "bathtube"
            
             
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "name": "Outdoor",
             "numberoflights":5,
-            "image": "./img/house.png"
+            "image": "house"
            
             
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "name": "Balcony",
             "numberoflights":2,
-            "image": "./img/balcony.png"
+            "image": "balcony"
            
             
         }

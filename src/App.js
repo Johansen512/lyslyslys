@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Router } from "@reach/router";
-import SceneButton from "../src/Components/SceneButton";
-import Allrooms from "../src/Components/AllRooms"
-import Mainview from "../src/View/Mainview";
-import Roomview from "../src/View/Roomview";
-import DataContextProvider from "../src/Contexts/DataContext"
+import SceneButton from "./Components/SceneButton";
+import Allrooms from "./Components/AllRooms"
+import Mainview from "./View/Mainview";
+import Roomview from "./View/Roomview";
+import DataContextProvider from "./contexts/DataContext"
+import DataContext from "./contexts/DataContext"
 
 
 

@@ -1,11 +1,15 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import {useContext, useState} from "react";
 import ControlPanelButton from "./ControlPanelButton"
-import dataContext from "../Contexts/DataContext"
+import { dataContext } from "../contexts/DataContext"
 
 
 
-const AllRooms = () => {
+const AllRooms = (props) => {
+    const { data } = useContext(dataContext);
+    data && console.log("from context:", data[0].id);
+    
 
     const style = css`
     width:23.4375;
@@ -17,8 +21,6 @@ const AllRooms = () => {
     font-weight: bold;
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
-    
-
 `;
 
 const sectionstyle = css`
@@ -26,25 +28,19 @@ const sectionstyle = css`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    
-    
-    
-
-
 `;
-
     return (  
 
 <main css={style}>
     <p>All Rooms</p>
 
     <section css={sectionstyle}>
-    <ControlPanelButton pictogram={"bed"} label={"Bed room"} no={"4"} link to />
-    <ControlPanelButton pictogram={"room"} label={"Living room"} no={"2"}/>
-    <ControlPanelButton pictogram={"kitchen"} label={"Kitchen"} no={"5"}/>
-    <ControlPanelButton pictogram={"bathtube"} label={"Bathroom"} no={"1"}/>
-    <ControlPanelButton pictogram={"house"} label={"Outdoor"} no={"5"}/>
-    <ControlPanelButton pictogram={"balcony"} label={"Balcony"} no={"2"}/>
+   {data && <ControlPanelButton pictogram={data[0].image} label= {data[0].name} no={data[0].numberoflights} link to />}
+   {data &&  <ControlPanelButton pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
+   {data &&  <ControlPanelButton pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
+   {data &&  <ControlPanelButton pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
+   {data &&  <ControlPanelButton pictogram={data[4].image} label={data[4].name} no={data[4].numberoflights}/>}
+   {data &&  <ControlPanelButton pictogram={data[5].image} label={data[5].name} no={data[5].numberoflights}/>}
     
     </section>
 </main>
