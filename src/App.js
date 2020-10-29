@@ -10,13 +10,13 @@ import DataContext from "./contexts/DataContext"
 
 
 
-function App() {
+function App(props) {
   return (
     <div className="App">
      
      <DataContextProvider>
       <Router>
-                    <Roomview path="/roomview" />
+                    <Roomview path="/roomview/:id"/>
                     <Mainview path="/" />
                 </Router>
 
