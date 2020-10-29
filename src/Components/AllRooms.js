@@ -36,7 +36,7 @@ const sectionstyle = css`
     <p>All Rooms</p>
 
     <section css={sectionstyle}>
-    <Link to="/roomview">{data && <ControlPanelButton pictogram={data[0].image} label={data[0].name} no={data[0].numberoflights}/>}</Link>
+    <Link to="/roomview?data[0]id=1">{data && <ControlPanelButton pictogram={data[0].image} label={data[0].name} no={data[0].numberoflights}/>}</Link>
    {data && <ControlPanelButton pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
    {data && <ControlPanelButton pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
    {data && <ControlPanelButton pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
