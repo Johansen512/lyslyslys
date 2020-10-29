@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { Link } from "@reach/router";
 
-const ControlPanelButton = ({label, pictogram, no, props }) => {
+const ControlPanelButton = ({label, id, pictogram, no, props }) => {
 
     const style = css`
     display: flex;
@@ -40,9 +41,9 @@ padding: 2 0 0.05rem 0.3rem;
 
     return ( 
 
-        
+        <Link to={"/roomview/"+ id}>
         <button css={style}
-        type="button"><img css={imgstyle} src={`/img/${pictogram}.png`} /><h3 css={hstyle}>{label}</h3><p css={pstyle}>{`${no} lights`}</p></button>
+        type="button"><img css={imgstyle} src={`/img/${pictogram}.png`} /><h3 css={hstyle}>{label}</h3><p css={pstyle}>{`${no} lights`}</p></button></Link>
 
 
      );

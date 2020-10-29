@@ -36,12 +36,12 @@ const sectionstyle = css`
     <p>All Rooms</p>
 
     <section css={sectionstyle}>
-    <Link to="/roomview?data[0]id=1">{data && <ControlPanelButton pictogram={data[0].image} label={data[0].name} no={data[0].numberoflights}/>}</Link>
-   {data && <ControlPanelButton pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
-   {data && <ControlPanelButton pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
-   {data && <ControlPanelButton pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
-   {data && <ControlPanelButton pictogram={data[4].image} label={data[4].name} no={data[4].numberoflights}/>}
-   {data && <ControlPanelButton pictogram={data[5].image} label={data[5].name} no={data[5].numberoflights}/>}
+    {data && <ControlPanelButton id={data[0].id} pictogram={data[0].image} label={data[0].name} no={data[0].numberoflights}/>}
+    {data && <ControlPanelButton id={data[1].id} pictogram={data[1].image} label={data[1].name} no={data[1].numberoflights}/>}
+    {data && <ControlPanelButton id={data[2].id} pictogram={data[2].image} label={data[2].name} no={data[2].numberoflights}/>}
+    {data && <ControlPanelButton id={data[3].id} pictogram={data[3].image} label={data[3].name} no={data[3].numberoflights}/>}
+    {data && <ControlPanelButton id={data[4].id} pictogram={data[4].image} label={data[4].name} no={data[4].numberoflights}/>}
+    {data && <ControlPanelButton id={data[5].id} pictogram={data[5].image} label={data[5].name} no={data[5].numberoflights}/>}
     
     </section>
 </main>
