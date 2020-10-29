@@ -4,7 +4,7 @@ import ControlDisplay from "../Components/ControlDisplay";
 import Roomheader from "../Components/Roomheader";
 
 
-const Roomview = () => {
+const Roomview = (props) => {
     const wrapperstyle = css`
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@ const Roomview = () => {
     
     
 `;
-
+console.log (props.id);
 
     return ( 
         <main css={wrapperstyle}>
