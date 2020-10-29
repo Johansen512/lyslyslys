@@ -4,7 +4,7 @@ import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 import dataContext from "../contexts/DataContext"
 import { Link } from "@reach/router"
 
-const Roomheader = ({room, no}) => {
+const Roomheader = ({label, no}) => {
 
     const imgstyle = css`
     grid-column: 1/2;
@@ -62,7 +62,7 @@ grid-row:3/4;
     return (
 
 
-<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="../img/backarrow.png"/></Link>{room}</h1><p css={pstyle}>{no} lights</p><img css={lampstyle} src="../img/lightbulb.png"/><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
+<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="../img/backarrow.png"/></Link>{label}</h1><p css={pstyle}>{no} lights</p><img css={lampstyle} src="../img/lightbulb.png"/><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
 
       );
 }
