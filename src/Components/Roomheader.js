@@ -3,6 +3,7 @@ import { css, jsx } from "@emotion/core";
 import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 import dataContext from "../contexts/DataContext"
 import { Link } from "@reach/router"
+import TheLamp from "../Components/TheLamp"
 
 const Roomheader = ({label, no}) => {
 
@@ -62,7 +63,7 @@ grid-row:3/4;
     return (
 
 
-<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="../img/backarrow.png"/></Link>{label}</h1><p css={pstyle}>{no} lights</p><img css={lampstyle} src="../img/lightbulb.png"/><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
+<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="../img/backarrow.png"/></Link>{label}</h1><p css={pstyle}>{no} lights</p><div css={lampstyle}><TheLamp /></div><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
 
       );
 }

@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { useState } from "react";
 
-const ColorBall = ({ballcolor, label}) => {
+const ColorBall = ({ballcolor, label, lampfill}) => {
 
     const ballstyle = css`
 
@@ -13,9 +14,20 @@ const ColorBall = ({ballcolor, label}) => {
     
     
     `;
+
+const [colorfill, setColorfill] = useState ("#ffffff")
+
+
+console.log (colorfill)
+
+lampfill={colorfill}
+
+
+
+
     return ( 
         
-        <button css={ballstyle}>{label}</button>
+        <button css={ballstyle} onClick={ e => setColorfill (e.target.lampfill)}>{label}</button>
     );
 }
  
