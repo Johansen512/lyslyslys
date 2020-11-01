@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import Colorball from "../Components/Colorball"
+import ColorBall from "../Components/Colorball"
+import ControlDisplay from "../Components/ControlDisplay"
 
 const TheLamp = ({ballcolor, lampfill}) => {
 
   
-
+console.log ("hello")
+console.log ("også" + lampfill)
 
 
     return ( <svg  width="139" height="192" viewBox="0 0 139 192">
@@ -13,14 +15,14 @@ const TheLamp = ({ballcolor, lampfill}) => {
     <filter id="OFF" x="35" y="122" width="70" height="70" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feFlood flood-color="#002d67"/>
+      <feFlood floodColor="#002d67"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
     <filter id="Ellipse_10" x="35" y="122" width="70" height="70" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="8" result="blur-2"/>
-      <feFlood flood-color="#a693eb"/>
+      <feFlood floodColor="#a693eb"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
@@ -30,7 +32,7 @@ const TheLamp = ({ballcolor, lampfill}) => {
       <circle id="OFF-2" data-name="OFF" cx="11" cy="11" r="11" transform="translate(59 143)" fill="#002d67"/>
 </g> 
     <g transform="matrix(1, 0, 0, 1, 204, -4)" filter="url(#Ellipse_10)">{/*Pæren er lige der ... nedenfor fill*/}
-      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="11" cy="11" r="11" transform="translate(59 143)" fill={lampfill}/>
+      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="11" cy="11" r="11" transform="translate(59 143)" fill={ballcolor}/>
     </g>
     <path id="Path_100" data-name="Path 100" d="M30.334,1.617h79.054c3.314,0,4.206,2.324,6,6L139,62a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6L24.334,7.617C25.837,4.237,27.02,1.617,30.334,1.617Z" transform="translate(204 85)" fill="#fff"/>
     <rect id="Rectangle_13" data-name="Rectangle 13" width="5" height="102" transform="translate(271 -4)" fill="#fff"/>

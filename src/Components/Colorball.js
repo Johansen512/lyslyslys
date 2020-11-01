@@ -2,6 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import { useState } from "react";
 
+
 const ColorBall = ({ballcolor, label, lampfill}) => {
 
     const ballstyle = css`
@@ -15,20 +16,33 @@ const ColorBall = ({ballcolor, label, lampfill}) => {
     
     `;
 
-const [colorfill, setColorfill] = useState ("#ffffff")
+ const [colorfill, setColorfill] = useState (ballcolor)
+
+function handleClick(e) {
 
 
-console.log (colorfill)
+  
+    
+    console.log('The link was clicked.') 
+    console.log (colorfill)
+let lampfill = colorfill
+console.log ("hey det er jo " + {lampfill})
+}
+  
 
-lampfill={colorfill}
+
+
 
 
 
 
     return ( 
+        //goes to ControlDisplay x 7 
+        <button css={ballstyle} onClick={handleClick}>{label}</button>
         
-        <button css={ballstyle} onClick={ e => setColorfill (e.target.lampfill)}>{label}</button>
-    );
+    
+    
+        );
 }
  
 export default ColorBall;

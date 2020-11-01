@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
-import dataContext from "../contexts/DataContext"
 import { Link } from "@reach/router"
 import TheLamp from "../Components/TheLamp"
 
