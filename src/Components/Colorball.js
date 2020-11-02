@@ -1,9 +1,11 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { useState } from "react";
+import { useState, useContext } from "react";
+
+import { dataContext } from "../contexts/DataContext"
 
 
-const ColorBall = ({ballcolor, label, lampfill}) => {
+const ColorBall = ({ballcolor, label}) => {
 
     const ballstyle = css`
 
@@ -16,18 +18,14 @@ const ColorBall = ({ballcolor, label, lampfill}) => {
     
     `;
 
- const [colorfill, setColorfill] = useState (ballcolor)
+ const {setLampcolor} = useContext(dataContext)
 
-function handleClick(e) {
+ 
 
 
-  
-    
-    console.log('The link was clicked.') 
-    console.log (colorfill)
-let lampfill = colorfill
-console.log ("hey det er jo " + {lampfill})
-}
+ 
+ 
+
   
 
 
@@ -38,7 +36,7 @@ console.log ("hey det er jo " + {lampfill})
 
     return ( 
         //goes to ControlDisplay x 7 
-        <button css={ballstyle} onClick={handleClick}>{label}</button>
+        <button css={ballstyle} onClick={() => setLampcolor(ballcolor)}>{label}</button>
         
     
     
