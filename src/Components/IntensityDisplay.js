@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { useState } from "react";
+import { useState, useContext  } from "react";
+import { dataContext } from "../contexts/DataContext"
 
 const IntensityDisplay = ({props}) => {
 
@@ -54,16 +55,24 @@ padding: 0 0.2rem;
 `;*/
 
 const [intensity, setIntensity] = useState ("0")
+const {setOpac} = useContext(dataContext)
 
+function OpacSlider (e){
+console.log (intensity/100)
+//setOpac = (intensity)/100;
+//console.log (setOpac)
 
-console.log (intensity)
+//e => setIntensity (e.target.value)
+setIntensity (e.target.value)
+setOpac (intensity/100)
+}
 
 
 
     return ( 
        <div css={style}>
       <img css={imgstyle} src="../img/bulbOff.png" alt="Light"/><input css={sliderstyle} type="range" min="0" max="100" 
-      value={intensity} onChange={ e => setIntensity (e.target.value)}step="1"/><img css={imgstyle} src="../img/bulbOn.png" alt="Light"/></div>
+      value={intensity} onChange={ OpacSlider }step="1"/><img css={imgstyle} src="../img/bulbOn.png" alt="Light"/></div>
       
     );
 }
