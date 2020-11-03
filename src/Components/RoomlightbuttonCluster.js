@@ -16,9 +16,9 @@ const RoomlightbuttonCluster = ({label, props}) => {
 
     return ( 
 <div css={style}>
-        <Roomlightbutton label={"Main lights"}/>
-        <Roomlightbutton label={"Desk lights"}/>
-        <Roomlightbutton label={"Bed lights"}/>
+        <Roomlightbutton picture={"../img/bulbOn.png"} label={"Main lights"}/>
+        <Roomlightbutton picture={"../img/BedBlack.png"} label={"Desk lights"}/>
+        <Roomlightbutton picture={"../img/BedBlack.png"} label={"Bed lights"}/>
         </div>
      );
 }

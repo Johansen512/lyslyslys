@@ -11,12 +11,13 @@ const Roomheader = ({label, no}) => {
     grid-row:1/2;
     width:0.87875rem;
     height:0.82875rem;
+    
    
     
     
 `;
 const lampstyle = css`
-grid-column: 6/8;
+grid-column: 5/6;
 grid-row:1/2;
 width:8.6875rem;
 height:10.3125rem;
@@ -30,6 +31,7 @@ const headerstyle = css`
     
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+padding:0;
     
 `;
 

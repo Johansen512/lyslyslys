@@ -26,7 +26,7 @@ align-items: center;
 
     return (
 
-<header css={headerstyle}><h1>{title}</h1><img css={imgstyle} src="img/user0.jpg"/></header>
+<header css={headerstyle}><h1>{title}</h1><img css={imgstyle} src="img/user.jpg"/></header>
 
 
       );

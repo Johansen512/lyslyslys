@@ -22,6 +22,7 @@ const AllRooms = (props) => {
     font-weight: bold;
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom:100px;
 `;
 
 const sectionstyle = css`

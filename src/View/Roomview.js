@@ -4,6 +4,7 @@ import ControlDisplay from "../Components/ControlDisplay";
 import Roomheader from "../Components/Roomheader";
 import {useContext} from "react";
 import { dataContext } from "../contexts/DataContext"
+import Footer from "../Components/Footer"
 
 const Roomview = (props) => {
     
@@ -24,7 +25,9 @@ const Roomview = (props) => {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
+    padding-left:1rem;
+    padding-right:1rem;
     background-color:#0A4DA2;
     color:#FFFFFF;
     font-size: 0.9375rem;
@@ -44,6 +47,7 @@ const Roomview = (props) => {
         <main css={wrapperstyle}>
         <Roomheader label={hest.name} no={hest.numberoflights} />
        <ControlDisplay />
+       <Footer />
         </main>
         
      );

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-const Roomlightbutton = ({label, props}) => {
+const Roomlightbutton = ({label, picture, props}) => {
 
     const style = css`
     display: flex;
@@ -29,7 +29,7 @@ padding: 0 0.5rem;
 
     return ( 
 
-        <button css={style}><img css={imgstyle} src="../img/bulb.png" alt="Light"/>{label}</button>
+        <button css={style}><img css={imgstyle} src={picture} alt="Light"/>{label}</button>
      );
 }
  

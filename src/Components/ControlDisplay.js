@@ -18,6 +18,7 @@ const ControlDisplay = () => {
     font-weight: bold;
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom:100px;
     
 
 `;
@@ -27,6 +28,7 @@ const sectionstyle = css`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    
     
     
     
