@@ -1,11 +1,14 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx  } from "@emotion/core";
 import { useState, useContext } from "react";
 
 import { dataContext } from "../contexts/DataContext"
 
 
 const ColorBall = ({ballcolor, label}) => {
+
+
+
 
     const ballstyle = css`
 
@@ -18,6 +21,11 @@ const ColorBall = ({ballcolor, label}) => {
     
     
     `;
+
+
+
+
+
 
  const {setLampcolor} = useContext(dataContext)
 

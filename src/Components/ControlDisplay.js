@@ -8,6 +8,24 @@ import dataContext from "../contexts/DataContext";
 
 const ControlDisplay = () => {
 
+      //Animation test
+const move = keyframes`
+from {
+transform: translate3d(0, 0, 0);
+}
+
+30%{
+transform: translate3d(5px, 0, 0);
+}
+
+70% {
+transform: translate3d(10px, 0, 0);
+}
+
+to {
+transform: translate3d(15px, 0, 0);
+}`;
+
     const style = css`
     width:23.4375;
     display: flex;
@@ -35,32 +53,16 @@ const sectionstyle = css`
 
 
 `;
-//Animation test
-const move = keyframes`
-    from {
-    transform: translate3d(-500px,0,0);
-  }
 
-  30%{
-    transform: translate3d(5px, 0, 0);
-  }
-
-  70% {
-    transform: translate3d(10px, 0, 0);
-  }
-
-to {
-    transform: translate3d(15px, 0, 0);
-  }
  
-`;
+
 
 const ballsection = css`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
     align-items: center;
-    animation: ${move} 5s linear;
+    
     border-style:none;
    
     
@@ -70,7 +72,11 @@ const ballsection = css`
 
 `;
 
+const balldynamics = css`
 
+animation: ${move} 1s linear infinite;
+
+`;
 
 
 
@@ -87,14 +93,21 @@ const ballsection = css`
 
     <p>Colors</p>
     <section css={ballsection}>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#FF9B9B"}/></div>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#94EB9E"}/></div>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#94CAEB"}/></div>
+    <div css={balldynamics}>
+    <ColorBall ballcolor={"#A594EB"}/></div>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#DE94EB"}/></div>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#EBD094"}/></div>
+    <div css={balldynamics}>
+    <ColorBall  ballcolor={"#FFFFFF"} label={"+"}/></div>
     
-    <ColorBall ballcolor={"#FF9B9B"}/>
-    <ColorBall ballcolor={"#94EB9E"}/>
-    <ColorBall ballcolor={"#94CAEB"}/>
-    <ColorBall ballcolor={"#A594EB"}/>
-    <ColorBall ballcolor={"#DE94EB"}/>
-    <ColorBall ballcolor={"#EBD094"}/>
-    <ColorBall ballcolor={"#FFFFFF"} label={"+"}/>
     </section>
 
     <p>Scenes</p>
