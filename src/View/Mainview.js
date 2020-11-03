@@ -18,6 +18,7 @@ const Mainview = () => {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    text-decoration: none;
     
     
     

@@ -14,6 +14,7 @@ const ColorBall = ({ballcolor, label}) => {
     background-color:${ballcolor};
     border-radius: 0.875rem;
     border-style:none;
+    outline:none;
     
     
     `;

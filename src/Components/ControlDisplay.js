@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx, keyframes } from "@emotion/core";
 import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton";
 import IntensityDisplay from "./IntensityDisplay";
@@ -35,18 +35,45 @@ const sectionstyle = css`
 
 
 `;
+//Animation test
+const move = keyframes`
+    from {
+    transform: translate3d(-500px,0,0);
+  }
+
+  30%{
+    transform: translate3d(5px, 0, 0);
+  }
+
+  70% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+to {
+    transform: translate3d(15px, 0, 0);
+  }
+ 
+`;
 
 const ballsection = css`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    animation: ${move} 5s linear;
+    border-style:none;
+   
     
     
     
 
 
 `;
+
+
+
+
+
 
     return (  
 

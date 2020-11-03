@@ -18,6 +18,8 @@ const ControlPanelButton = ({label, id, pictogram, no, props }) => {
     border-radius: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    outline:none;
+    
     
     
 `;
@@ -26,6 +28,7 @@ font-size: 0.825rem;
 color:#FFA939;
 padding: 0 0 0.5rem 0.3rem;
 margin: 0;
+
 `;
 
 const hstyle = css`

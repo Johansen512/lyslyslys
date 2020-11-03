@@ -25,6 +25,7 @@ background-color: #CECECE;
 height: 0.1rem;
 width: 200px;
 margin: 0 1rem;
+outline:none;
 
 
 `;

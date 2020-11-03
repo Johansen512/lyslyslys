@@ -32,9 +32,9 @@ const Roomview = (props) => {
     color:#FFFFFF;
     font-size: 0.9375rem;
     font-weight: bold;
-    
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    
     
     
 `;
