@@ -40,7 +40,7 @@ height:1.3125rem;
 
     return ( 
 
-        <span css={style}> <img css={imgstyle} src={"../img/bulb.png"} /><p css={pstyle}>{scene}</p></span>
+        <span css={style}><img css={imgstyle} src={"../img/bulb.png"} /><p css={pstyle}>{scene}</p></span>
       
 
 

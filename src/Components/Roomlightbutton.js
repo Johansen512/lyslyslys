@@ -14,7 +14,7 @@ const Roomlightbutton = ({label, picture, props}) => {
     color:#000000;
     font-size: 0.8125rem;
     font-weight: bold;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     font-family: 'Montserrat', sans-serif;
     border-style:none;
     

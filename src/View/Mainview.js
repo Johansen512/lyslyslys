@@ -10,8 +10,9 @@ const Mainview = () => {
     const wrapperstyle = css`
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+   padding-top:1rem;
     background-color:#0A4DA2;
     color:#FFFFFF;
     font-size: 0.9375rem;
@@ -19,6 +20,7 @@ const Mainview = () => {
     font-family: 'Montserrat', sans-serif;
     border-style:none;
     text-decoration: none;
+    position: relative;
     
     
     

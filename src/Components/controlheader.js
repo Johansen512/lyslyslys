@@ -17,6 +17,7 @@ const Controlheader = ({title}) => {
 const headerstyle = css`
     
 display: flex;
+margin: 1rem;
 flex-direction: row;
 justify-content:space-between;
 align-items: center;

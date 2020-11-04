@@ -4,26 +4,26 @@ import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton";
 import IntensityDisplay from "./IntensityDisplay";
 import dataContext from "../contexts/DataContext";
+import {  useContext } from "react";
 
 
 const ControlDisplay = () => {
 
+    /*const {picker} = useContext(dataContext)
+console.log ("aj aj" + (picker))*/
+
       //Animation test
 const move = keyframes`
 from {
-transform: translate3d(-100px, 0, 0);
+transform: translate(-500px, 0);
 }
 
-30%{
-transform: translate3d(5px, 0, 0);
-}
 
-70% {
-transform: translate3d(10px, 0, 0);
-}
+
+
 
 to {
-transform: translate3d(15px, 0, 0);
+transform: translate(5px, 0);
 }`;
 
 
@@ -66,6 +66,7 @@ const ballsection = css`
     justify-content:space-evenly;
     align-items: center;
     border-style:none;
+    position: relative;
    
     
     
@@ -76,7 +77,7 @@ const ballsection = css`
 
 const balldynamics = css`
 
-animation: ${move} 1s linear ;
+animation: ${move} 1s linear;
 
 `;
 
@@ -108,17 +109,16 @@ animation: ${move} 1s linear ;
     <div css={balldynamics}>
     <ColorBall  ballcolor={"#EBD094"}/></div>
     <div css={balldynamics}>
-    <ColorBall  ballcolor={"#FFFFFF"} label={"+"}/></div>
+    <ColorBall /*onClick={() => picker(false)}*/ ballcolor={"#FFFFFF"} label={"+"}/></div>
     
     </section>
 
     <p>Scenes</p>
     <section css={sectionstyle}>
-    
-    <SceneButton color={"#FF9B9B"} scene = {"Birthday"} />
-    <SceneButton color={"#A693EB"} scene = {"Party"} />
-    <SceneButton color={"#93CAEB"} scene = {"Relax"} />
-    <SceneButton color={"#89DD94"} scene = {"Fun"} />
+    <div css={balldynamics}><SceneButton  color={"#FF9B9B"} scene = {"Birthday"} /></div>
+    <div css={balldynamics}><SceneButton color={"#A693EB"} scene = {"Party"} /></div>
+    <div css={balldynamics}><SceneButton  color={"#93CAEB"} scene = {"Relax"} /></div>
+    <div css={balldynamics}><SceneButton  color={"#89DD94"} scene = {"Fun"} /></div>
     </section>
 </main>
 

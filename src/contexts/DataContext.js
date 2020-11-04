@@ -7,6 +7,7 @@ const DataContextProvider = (props) => {
     const [data, setData] = useState(null);
     const [lampcolor, setLampcolor]= useState("#ff0000")
     const [opac, setOpac]= useState ("0.0") 
+    const [picker, setPicker]=useState (true)
 
     useEffect(() => {
         fetch("http://localhost:3000/data/stuff.json")
@@ -16,7 +17,7 @@ const DataContextProvider = (props) => {
     
     data && console.log(data)
     console.log(lampcolor)
-    return (<dataContext.Provider value={{ data, lampcolor, setLampcolor, opac, setOpac }}>
+    return (<dataContext.Provider value={{ data, lampcolor, setLampcolor, opac, setOpac, picker, setPicker }}>
 
     {props.children}
     </dataContext.Provider>

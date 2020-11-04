@@ -11,8 +11,10 @@ justify-content: space-evenly;
 align-items: center;
 background-color: white;
 height:4.1875rem;
-width: 100%;
+width: 23.4375rem;
 color:black;
+bottom: 0;
+position:absolute;
 
 
 
@@ -21,7 +23,7 @@ color:black;
     return ( 
     
     <footer css={footerstyle}>
-        <img src="img/bluebulb.png" alt="light"/><img src="img/bluecog.png" alt="manage"/><img src="img/bluehouse.png" alt="home"/>
+        <img src="http://localhost:3000/img/bluebulb.png" alt="light"/><img src="http://localhost:3000/img/bluecog.png" alt="manage"/><img src="http://localhost:3000/img/bluehouse.png" alt="home"/>
         
     </footer>
 

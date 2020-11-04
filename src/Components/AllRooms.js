@@ -13,7 +13,7 @@ const AllRooms = (props) => {
     
 
     const style = css`
-    width:23.4375;
+    width:375px;
     display: flex;
     flex-direction: column;
     background-color:#F6F8FB; 
@@ -23,6 +23,9 @@ const AllRooms = (props) => {
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:100px;
+    
+  
+    
 `;
 
 const sectionstyle = css`
