@@ -3,6 +3,7 @@ import { css, jsx } from "@emotion/core";
 import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 import { Link } from "@reach/router"
 import TheLamp from "../Components/TheLamp"
+import TheBackgroundCircles from "../Components/TheBackgroundCircles"
 
 const Roomheader = ({label, no}) => {
 

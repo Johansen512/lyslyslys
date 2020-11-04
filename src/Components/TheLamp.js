@@ -15,7 +15,7 @@ const TheLamp = () => {
  
   
 
-
+//HER LOCAL STORAGE TING! ... MÅSKE
 
 
   

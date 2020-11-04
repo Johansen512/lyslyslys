@@ -47,7 +47,6 @@ const Roomview = (props) => {
         <main css={wrapperstyle}>
         <Roomheader label={hest.name} no={hest.numberoflights} />
        <ControlDisplay />
-       
        <Footer />
         </main>
         

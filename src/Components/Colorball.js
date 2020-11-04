@@ -31,6 +31,14 @@ const ColorBall = ({ballcolor, label}) => {
 
  
 
+ /*tokenCode = data.access_token;
+ localStorage.setItem("token", tokenCode);*/
+
+ 
+function Test (){
+    setLampcolor(ballcolor)
+    console.log ("tootoooot")
+}
 
  
  
@@ -47,7 +55,8 @@ const ColorBall = ({ballcolor, label}) => {
         //goes to ControlDisplay x 7 
         <button css={ballstyle} onClick={() => setLampcolor(ballcolor)}>{label}</button>
         
-    
+     
+        
     
         );
 }
