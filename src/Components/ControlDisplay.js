@@ -11,7 +11,7 @@ const ControlDisplay = () => {
       //Animation test
 const move = keyframes`
 from {
-transform: translate3d(0, 0, 0);
+transform: translate3d(-100px, 0, 0);
 }
 
 30%{
@@ -26,6 +26,8 @@ to {
 transform: translate3d(15px, 0, 0);
 }`;
 
+
+
     const style = css`
     width:23.4375;
     display: flex;
@@ -37,6 +39,7 @@ transform: translate3d(15px, 0, 0);
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:100px;
+    
     
 
 `;
@@ -60,9 +63,8 @@ const sectionstyle = css`
 const ballsection = css`
     display: flex;
     flex-direction: row;
-    
+    justify-content:space-evenly;
     align-items: center;
-    
     border-style:none;
    
     
@@ -74,7 +76,7 @@ const ballsection = css`
 
 const balldynamics = css`
 
-animation: ${move} 1s linear infinite;
+animation: ${move} 1s linear ;
 
 `;
 
