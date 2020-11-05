@@ -48,7 +48,7 @@ padding: 2 0 0.05rem 0.3rem;
 
         <Link to={"/roomview/"+ id}>
         <button css={style}
-        type="button"><img css={imgstyle} src={`/img/${pictogram}.png`} alt="" /><h3 css={hstyle}>{label}</h3><p css={pstyle}>{`${no} lights`}</p></button></Link>
+        type="button"><img css={imgstyle} src={`../img/${pictogram}.png`} alt="" /><h3 css={hstyle}>{label}</h3><p css={pstyle}>{`${no} lights`}</p></button></Link>
 
 
      );

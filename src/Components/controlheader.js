@@ -27,7 +27,7 @@ align-items: center;
 
     return (
 
-<header css={headerstyle}><h1>{title}</h1><img css={imgstyle} src="img/user.jpg" alt="looser"/></header>
+<header css={headerstyle}><h1>{title}</h1><img css={imgstyle} src="https://dethimmelskelys.netlify.app/img/user.jpg" alt="looser"/></header>
 
 
       );
