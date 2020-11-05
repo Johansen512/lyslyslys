@@ -23,7 +23,7 @@ position:absolute;
     return ( 
     
     <footer css={footerstyle}>
-        <img src="https://dethimmelskelys.netlify.app/img/bluebulb.png" alt="light"/><img src="http://localhost:3000/img/bluecog.png" alt="manage"/><img src="http://localhost:3000/img/bluehouse.png" alt="home"/>
+        <img src="https://dethimmelskelys.netlify.app/public/img/bluebulb.png" alt="light"/><img src="https://dethimmelskelys.netlify.app/public/img/bluecog.png" alt="manage"/><img src="https://dethimmelskelys.netlify.app/public/img/bluehouse.png" alt="home"/>
         
     </footer>
 
