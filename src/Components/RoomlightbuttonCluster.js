@@ -31,7 +31,7 @@ transform: translate(5px, 0);
     return ( 
 <div css={style}>
         <Roomlightbutton picture={"../img/bulbOn.png"} label={"Main lights"}/>
-        <Roomlightbutton picture={"../img/BedBlack.png"} label={"Desk lights"}/>
+        <Roomlightbutton picture={"../img/furnitureBlack.png"} label={"Desk lights"}/>
         <Roomlightbutton picture={"../img/BedBlack.png"} label={"Bed lights"}/>
         </div>
      );
