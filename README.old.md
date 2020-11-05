@@ -56,5 +56,5 @@ Fonten som bruges i opgaven hedder Circular. Det er dog en købefont. <br>Du kan
 ## Aflevering
 Aflevering torsdag d. 29. oktober.<br>
 Du har afleveret når din applikation er hostet på Netlify eller github pages og linket hertil er sat ind herunder.<br><br>
-**Projekt url:** Skriv din Netlify / github pages adresse her!!!
+**https://dethimmelskelys.netlify.app/** Skriv din Netlify / github pages adresse her!!!
 
