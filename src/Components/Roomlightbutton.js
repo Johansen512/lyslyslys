@@ -1,13 +1,15 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
+
+//Den enkelte Topknap i rum ... mainlight, desklight, bedlight går til RoomlightbuttonCluster
 const Roomlightbutton = ({label, picture, props}) => {
 
     const style = css`
     display: flex;
     flex-direction: row;
-    padding: 1rem;
-    margin: 0.75rem;
+    padding: 0.5rem;
+    margin: 0.46875rem;
     width: 7.75rem;
     height: 2.8125rem;
     background-color:#FFFFFF;

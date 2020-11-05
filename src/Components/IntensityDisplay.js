@@ -3,6 +3,8 @@ import { css, jsx } from "@emotion/core";
 import { useState, useContext  } from "react";
 import { dataContext } from "../contexts/DataContext"
 
+//Slider til lysstyrke ... går til ControlDisplay
+
 const IntensityDisplay = ({props}) => {
 
   const style= css`

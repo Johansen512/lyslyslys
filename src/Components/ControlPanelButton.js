@@ -2,6 +2,8 @@
 import { css, jsx } from "@emotion/core";
 import { Link } from "@reach/router";
 
+//Den enkelte rumknap ... går til AllRoom
+
 const ControlPanelButton = ({label, id, pictogram, no, props }) => {
 
     const style = css`

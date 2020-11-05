@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-
+//Footer nav går til Mainview og Roomview
 
 const Footer = () => {
 
@@ -11,7 +11,7 @@ justify-content: space-evenly;
 align-items: center;
 background-color: white;
 height:4.1875rem;
-width: 23.4375rem;
+width: 100vw;
 color:black;
 bottom: 0;
 position:absolute;

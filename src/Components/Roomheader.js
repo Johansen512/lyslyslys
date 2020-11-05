@@ -5,6 +5,9 @@ import { Link } from "@reach/router"
 import TheLamp from "../Components/TheLamp"
 import TheBackgroundCircles from "../Components/TheBackgroundCircles"
 
+
+//Header til de enkelte rum går til Roomview
+
 const Roomheader = ({label, no}) => {
 
     const imgstyle = css`

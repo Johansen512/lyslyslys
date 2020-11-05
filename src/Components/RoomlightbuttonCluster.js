@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx, keyframes } from "@emotion/core";
 import Roomlightbutton from "../Components/Roomlightbutton"
-
+//Samling af de tre top roombuttons mainlight, bedlight, desklight ... går til Roomheader
 const RoomlightbuttonCluster = ({label, props}) => {
 
 

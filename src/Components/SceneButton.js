@@ -1,15 +1,16 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-
+//Scenebutton går til ControlDisplay
 const SceneButton = ({scene, color, props }) => {
 
     const style = css`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 0.75rem;
+    margin: 0.375rem;
+    padding:0.5rem;
     width: 9.375rem;
     height: 3.4375rem;
     background-color:${color};
@@ -19,6 +20,7 @@ const SceneButton = ({scene, color, props }) => {
     border-radius: 0.875rem;
     font-family: 'Montserrat', sans-serif;
     border-style:none;
+    
     
     
 `;

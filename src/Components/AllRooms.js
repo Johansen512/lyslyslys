@@ -5,7 +5,7 @@ import { Link } from "@reach/router";
 import ControlPanelButton from "./ControlPanelButton"
 import { dataContext } from "../contexts/DataContext"
 
-
+//Vælg rum går til Mainview
 
 const AllRooms = (props) => {
     const { data } = useContext(dataContext);
@@ -13,7 +13,7 @@ const AllRooms = (props) => {
     
 
     const style = css`
-    width:375px;
+    width:100vw;
     display: flex;
     flex-direction: column;
     background-color:#F6F8FB; 

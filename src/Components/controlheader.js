@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-
+//Toppen på forsiden ... "forsiden"
 
 const Controlheader = ({title}) => {
 

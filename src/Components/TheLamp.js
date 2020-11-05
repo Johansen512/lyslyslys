@@ -5,6 +5,8 @@ import ControlDisplay from "../Components/ControlDisplay"
 import { useContext } from "react";
 import { dataContext } from "../contexts/DataContext"
 
+//Lampe SVG plus det løse går til Roomheader
+
 const TheLamp = () => {
 
   const {lampcolor}=useContext(dataContext)

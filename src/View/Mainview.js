@@ -8,7 +8,7 @@ import Footer from "../Components/Footer"
 
 const Mainview = () => {
     const wrapperstyle = css`
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;

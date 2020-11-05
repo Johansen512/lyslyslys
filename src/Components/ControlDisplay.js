@@ -6,7 +6,7 @@ import IntensityDisplay from "./IntensityDisplay";
 import dataContext from "../contexts/DataContext";
 import {  useContext } from "react";
 
-
+//viser lysskifteslider, farveskift knapper og moodknapper går til Roomview
 const ControlDisplay = () => {
 
     /*const {picker} = useContext(dataContext)
@@ -29,7 +29,7 @@ transform: translate(5px, 0);
 
 
     const style = css`
-    width:23.4375;
+    width:100vw;
     display: flex;
     flex-direction: column;
     background-color:#F6F8FB; 
@@ -47,8 +47,9 @@ transform: translate(5px, 0);
 const sectionstyle = css`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
+    
+    
     
     
     
@@ -78,6 +79,14 @@ const ballsection = css`
 const balldynamics = css`
 
 animation: ${move} 1s linear;
+justify-self: center;
+
+`;
+
+const headlines = css`
+
+display:flex;
+margin: 2rem;
 
 `;
 
@@ -87,14 +96,14 @@ animation: ${move} 1s linear;
     return (  
 
 <main css={style}>
-<p>Intensity</p>
+<p css={headlines}>Intensity</p>
     <section css={sectionstyle}>
     
     <IntensityDisplay />
     </section>
 
 
-    <p>Colors</p>
+    <p css={headlines}>Colors</p>
     <section css={ballsection}>
     <div css={balldynamics}>
     <ColorBall  ballcolor={"#FF9B9B"}/></div>
@@ -113,7 +122,7 @@ animation: ${move} 1s linear;
     
     </section>
 
-    <p>Scenes</p>
+    <p css={headlines}>Scenes</p>
     <section css={sectionstyle}>
     <div css={balldynamics}><SceneButton  color={"#FF9B9B"} scene = {"Birthday"} /></div>
     <div css={balldynamics}><SceneButton color={"#A693EB"} scene = {"Party"} /></div>
