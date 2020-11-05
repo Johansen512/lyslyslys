@@ -22,6 +22,7 @@ transform: translate(5px, 0);
     display: flex;
     flex-direction: row;
     animation: ${move} 1s linear;
+    margin: 2rem;
 `;
 
 

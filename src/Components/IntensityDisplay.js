@@ -25,7 +25,7 @@ const sliderstyle = css`
 appearance: none;
 background-color: #CECECE;
 height: 0.1rem;
-width: 200px;
+width: 260px;
 margin: 0 1rem;
 outline:none;
 
