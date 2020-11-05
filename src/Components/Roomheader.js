@@ -70,7 +70,7 @@ grid-row:3/4;
     return (
 
 
-<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="../img/backarrow.png" alt="backarrow"/></Link>{label}</h1><p css={pstyle}>{no} lights</p><div css={lampstyle}><TheLamp /></div><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
+<header css={headerstyle}><h1 css={hstyle}><Link to="/"><img css={imgstyle} src="https://dethimmelskelys.netlify.app/img/backarrow.png" alt="backarrow"/></Link>{label}</h1><p css={pstyle}>{no} lights</p><div css={lampstyle}><TheLamp /></div><div css={clusterstyle}><RoomlightbuttonCluster /></div></header>
 
       );
 }

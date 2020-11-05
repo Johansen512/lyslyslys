@@ -42,7 +42,7 @@ height:1.3125rem;
 
     return ( 
 
-        <span css={style}><img css={imgstyle} src={"../img/bulb.png"} alt="bulb" /><p css={pstyle}>{scene}</p></span>
+        <span css={style}><img css={imgstyle} src={"https://dethimmelskelys.netlify.app/img/bulb.png"} alt="bulb" /><p css={pstyle}>{scene}</p></span>
       
 
 

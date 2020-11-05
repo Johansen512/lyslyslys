@@ -74,8 +74,8 @@ setOpac (intensity/100)
 
     return ( 
        <div css={style}>
-      <img css={imgstyle} src="../img/bulbOff.png" alt="Light"/><input css={sliderstyle} type="range" min="0" max="100" 
-      value={intensity} onChange={ OpacSlider }step="1"/><img css={imgstyle} src="../img/bulbOn.png" alt="Light"/></div>
+      <img css={imgstyle} src="https://dethimmelskelys.netlify.app/img/bulbOff.png" alt="Light"/><input css={sliderstyle} type="range" min="0" max="100" 
+      value={intensity} onChange={ OpacSlider }step="1"/><img css={imgstyle} src="https://dethimmelskelys.netlify.app/img/bulbOn.png" alt="Light"/></div>
       
     );
 }
