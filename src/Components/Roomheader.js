@@ -3,7 +3,7 @@ import { css, jsx } from "@emotion/core";
 import RoomlightbuttonCluster from "../Components/RoomlightbuttonCluster"
 import { Link } from "@reach/router"
 import TheLamp from "../Components/TheLamp"
-import TheBackgroundCircles from "../Components/TheBackgroundCircles"
+
 
 
 //Header til de enkelte rum går til Roomview
@@ -36,7 +36,7 @@ const headerstyle = css`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 padding:0;
-border: solid black 5px;
+
     
 `;
 

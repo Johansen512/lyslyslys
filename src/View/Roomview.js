@@ -5,7 +5,7 @@ import Roomheader from "../Components/Roomheader";
 import {useContext} from "react";
 import { dataContext } from "../contexts/DataContext"
 import Footer from "../Components/Footer"
-import Colorpicker from "../Components/Colorpicker"
+
 
 const Roomview = (props) => {
     

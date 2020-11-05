@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import AllRooms from "../Components/AllRooms"
 import Controlheader from "../Components/controlheader"
-import dataContext from "../contexts/DataContext"
+
 import Footer from "../Components/Footer"
 
 

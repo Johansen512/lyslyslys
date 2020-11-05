@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
-import ColorBall from "../Components/Colorball"
-import ControlDisplay from "../Components/ControlDisplay"
+import { jsx } from "@emotion/core";
 import { useContext } from "react";
 import { dataContext } from "../contexts/DataContext"
 

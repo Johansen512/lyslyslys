@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import {useContext, useState} from "react";
-import { Link } from "@reach/router";
+import { useContext } from "react";
 import ControlPanelButton from "./ControlPanelButton"
 import { dataContext } from "../contexts/DataContext"
 
@@ -24,6 +23,7 @@ const AllRooms = (props) => {
     font-family: 'Montserrat', sans-serif;
     padding-bottom:100px;
     
+    
   
     
 `;
@@ -33,6 +33,7 @@ const sectionstyle = css`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 `;
     return (  
 

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { jsx } from "@emotion/core";
 import './switchButton.css';
 /*import MyContext from "../contexts/MainContext";
 import {types} from "../contexts/MainContext";*/

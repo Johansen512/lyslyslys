@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx  } from "@emotion/core";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 import { dataContext } from "../contexts/DataContext"
 

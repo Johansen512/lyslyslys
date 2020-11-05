@@ -3,8 +3,7 @@ import { css, jsx, keyframes } from "@emotion/core";
 import ColorBall from "./Colorball";
 import SceneButton from "./SceneButton";
 import IntensityDisplay from "./IntensityDisplay";
-import dataContext from "../contexts/DataContext";
-import {  useContext } from "react";
+
 
 //viser lysskifteslider, farveskift knapper og moodknapper går til Roomview
 const ControlDisplay = () => {
