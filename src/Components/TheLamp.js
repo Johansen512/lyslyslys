@@ -27,7 +27,7 @@ const TheLamp = () => {
     <filter id="OFF" x="35" y="122" width="70" height="70" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feFlood floodColor="#002d67"/>
+      <feFlood floodColor={lampcolor}/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
@@ -41,10 +41,10 @@ const TheLamp = () => {
   </defs>
   <g id="light_bulb" data-name="light bulb" transform="translate(-204 4)">
     <g transform="matrix(1, 0, 0, 1, 204, -4)" filter="url(#OFF)">
-      <circle id="OFF-2" data-name="OFF" cx="11" cy="11" r="11" transform="translate(59 143)" fill={lampcolor}/>
+      <circle id="OFF-2" data-name="OFF" cx="11" cy="11" r="13" transform="translate(59 143)" fill={lampcolor}/>
 </g> 
     <g transform="matrix(1, 0, 0, 1, 204, -4)" filter="url(#Ellipse_10)">{/*Pæren er lige der ... nedenfor fill*/}
-      <circle opacity={opac} id="Ellipse_10-2" data-name="Ellipse 10" cx="11" cy="11" r="11" transform="translate(59 143)" fill={lampcolor}/>
+      <circle opacity={opac} id="Ellipse_10-2" data-name="Ellipse 10" cx="11" cy="11" r="13" transform="translate(59 143)" fill={lampcolor}/>
     </g>
     <path id="Path_100" data-name="Path 100" d="M30.334,1.617h79.054c3.314,0,4.206,2.324,6,6L139,62a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6L24.334,7.617C25.837,4.237,27.02,1.617,30.334,1.617Z" transform="translate(204 85)" fill="#fff"/>
     <rect id="Rectangle_13" data-name="Rectangle 13" width="5" height="102" transform="translate(271 -4)" fill="#fff"/>

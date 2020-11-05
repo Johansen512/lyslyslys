@@ -38,6 +38,7 @@ transform: translate(5px, 0);
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:100px;
+    overflow: hidden;
     
     
 
