@@ -10,7 +10,7 @@ const DataContextProvider = (props) => {
     const [picker, setPicker]=useState (true)
 
     useEffect(() => {
-        fetch("http://localhost:3000/data/stuff.json")
+        fetch("/data/stuff.json")
         .then (response => response.json())
         .then (result => setData(result.stuff))
     }, []);

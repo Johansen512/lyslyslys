@@ -8,7 +8,7 @@ const FetchTest = (props) => {
    
     const [data, setData] = useState(null);
     useEffect(() => {
-        fetch (`https://dethimmelskelys.netlify.app/data/stuff.json`)
+        fetch (`/data/stuff.json`)
         .then (response => response.json())
         .then (result => setData(result)
             )
