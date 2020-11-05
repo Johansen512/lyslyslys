@@ -32,13 +32,13 @@ const ColorBall = ({ballcolor, label}) => {
  
 
  /*tokenCode = data.access_token;
- localStorage.setItem("token", tokenCode);*/
+ localStorage.setItem("token", tokenCode);
 
  
 function Test (){
     setLampcolor(ballcolor)
     console.log ("tootoooot")
-}
+}*/
 
  
  
