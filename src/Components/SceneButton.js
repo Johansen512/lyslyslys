@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { dataContext } from "../contexts/DataContext"
+import { useContext } from "react";
 
 //Scenebutton går til ControlDisplay
-const SceneButton = ({scene, color, props }) => {
+const SceneButton = ({scene, ballcolor, color, props }) => {
+const {setLampcolor} = useContext(dataContext)
 
     const style = css`
     display: flex;
@@ -42,7 +45,7 @@ height:1.3125rem;
 
     return ( 
 
-        <span css={style}><img css={imgstyle} src={"https://dethimmelskelys.netlify.app/img/bulb.png"} alt="bulb" /><p css={pstyle}>{scene}</p></span>
+        <span css={style}>onClick={() => setLampcolor(ballcolor)}<img css={imgstyle} src={"https://dethimmelskelys.netlify.app/img/bulb.png"} alt="bulb" /><p css={pstyle}>{scene}</p></span>
       
 
 

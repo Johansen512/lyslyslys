@@ -13,7 +13,7 @@ import {types} from "../contexts/MainContext";*/
 
 const SwitchButton = ({ primeStyle, label, ...props }) => {
 const mode = primeStyle ? 'primeStyle--big' : 'primeStyle--scene';
-
+const {setLampcolor} = useContext(dataContext)
 
 /*const primeStyle = css`
 width: 9.375em;
